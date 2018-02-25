@@ -1,236 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-ExtraBold.eot');
+    src: local('Raleway ExtraBold'), local('Raleway-ExtraBold'),
+    url('../fonts/Raleway-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-ExtraBold.woff2') format('woff2'),
+    url('../fonts/Raleway-ExtraBold.woff') format('woff'),
+    url('../fonts/Raleway-ExtraBold.ttf') format('truetype'),
+    url('../fonts/Raleway-ExtraBold.svg#Raleway-ExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-ExtraLight.eot');
+    src: local('Raleway ExtraLight'), local('Raleway-ExtraLight'),
+    url('../fonts/Raleway-ExtraLight.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-ExtraLight.woff2') format('woff2'),
+    url('../fonts/Raleway-ExtraLight.woff') format('woff'),
+    url('../fonts/Raleway-ExtraLight.ttf') format('truetype'),
+    url('../fonts/Raleway-ExtraLight.svg#Raleway-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-ExtraBoldItalic.eot');
+    src: local('Raleway ExtraBold Italic'), local('Raleway-ExtraBoldItalic'),
+    url('../fonts/Raleway-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-ExtraBoldItalic.woff2') format('woff2'),
+    url('../fonts/Raleway-ExtraBoldItalic.woff') format('woff'),
+    url('../fonts/Raleway-ExtraBoldItalic.ttf') format('truetype'),
+    url('../fonts/Raleway-ExtraBoldItalic.svg#Raleway-ExtraBoldItalic') format('svg');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Light.eot');
+    src: local('Raleway Light'), local('Raleway-Light'),
+    url('../fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-Light.woff2') format('woff2'),
+    url('../fonts/Raleway-Light.woff') format('woff'),
+    url('../fonts/Raleway-Light.ttf') format('truetype'),
+    url('../fonts/Raleway-Light.svg#Raleway-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-ThinItalic.eot');
+    src: local('Raleway Thin Italic'), local('Raleway-ThinItalic'),
+    url('../fonts/Raleway-ThinItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-ThinItalic.woff2') format('woff2'),
+    url('../fonts/Raleway-ThinItalic.woff') format('woff'),
+    url('../fonts/Raleway-ThinItalic.ttf') format('truetype'),
+    url('../fonts/Raleway-ThinItalic.svg#Raleway-ThinItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-LightItalic.eot');
+    src: local('Raleway Light Italic'), local('Raleway-LightItalic'),
+    url('../fonts/Raleway-LightItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-LightItalic.woff2') format('woff2'),
+    url('../fonts/Raleway-LightItalic.woff') format('woff'),
+    url('../fonts/Raleway-LightItalic.ttf') format('truetype'),
+    url('../fonts/Raleway-LightItalic.svg#Raleway-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-SemiBold.eot');
+    src: local('Raleway SemiBold'), local('Raleway-SemiBold'),
+    url('../fonts/Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-SemiBold.woff2') format('woff2'),
+    url('../fonts/Raleway-SemiBold.woff') format('woff'),
+    url('../fonts/Raleway-SemiBold.ttf') format('truetype'),
+    url('../fonts/Raleway-SemiBold.svg#Raleway-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Black.eot');
+    src: local('Raleway Black'), local('Raleway-Black'),
+    url('../fonts/Raleway-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-Black.woff2') format('woff2'),
+    url('../fonts/Raleway-Black.woff') format('woff'),
+    url('../fonts/Raleway-Black.ttf') format('truetype'),
+    url('../fonts/Raleway-Black.svg#Raleway-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Regular.eot');
+    src: local('Raleway'), local('Raleway-Regular'),
+    url('../fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-Regular.woff2') format('woff2'),
+    url('../fonts/Raleway-Regular.woff') format('woff'),
+    url('../fonts/Raleway-Regular.ttf') format('truetype'),
+    url('../fonts/Raleway-Regular.svg#Raleway-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Bold.eot');
+    src: local('Raleway Bold'), local('Raleway-Bold'),
+    url('../fonts/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-Bold.woff2') format('woff2'),
+    url('../fonts/Raleway-Bold.woff') format('woff'),
+    url('../fonts/Raleway-Bold.ttf') format('truetype'),
+    url('../fonts/Raleway-Bold.svg#Raleway-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Medium.eot');
+    src: local('Raleway Medium'), local('Raleway-Medium'),
+    url('../fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-Medium.woff2') format('woff2'),
+    url('../fonts/Raleway-Medium.woff') format('woff'),
+    url('../fonts/Raleway-Medium.ttf') format('truetype'),
+    url('../fonts/Raleway-Medium.svg#Raleway-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Thin.eot');
+    src: local('Raleway Thin'), local('Raleway-Thin'),
+    url('../fonts/Raleway-Thin.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-Thin.woff2') format('woff2'),
+    url('../fonts/Raleway-Thin.woff') format('woff'),
+    url('../fonts/Raleway-Thin.ttf') format('truetype'),
+    url('../fonts/Raleway-Thin.svg#Raleway-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-SemiBoldItalic.eot');
+    src: local('Raleway SemiBold Italic'), local('Raleway-SemiBoldItalic'),
+    url('../fonts/Raleway-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-SemiBoldItalic.woff2') format('woff2'),
+    url('../fonts/Raleway-SemiBoldItalic.woff') format('woff'),
+    url('../fonts/Raleway-SemiBoldItalic.ttf') format('truetype'),
+    url('../fonts/Raleway-SemiBoldItalic.svg#Raleway-SemiBoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-ExtraLightItalic.eot');
+    src: local('Raleway ExtraLight Italic'), local('Raleway-ExtraLightItalic'),
+    url('../fonts/Raleway-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-ExtraLightItalic.woff2') format('woff2'),
+    url('../fonts/Raleway-ExtraLightItalic.woff') format('woff'),
+    url('../fonts/Raleway-ExtraLightItalic.ttf') format('truetype'),
+    url('../fonts/Raleway-ExtraLightItalic.svg#Raleway-ExtraLightItalic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-BlackItalic.eot');
+    src: local('Raleway Black Italic'), local('Raleway-BlackItalic'),
+    url('../fonts/Raleway-BlackItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-BlackItalic.woff2') format('woff2'),
+    url('../fonts/Raleway-BlackItalic.woff') format('woff'),
+    url('../fonts/Raleway-BlackItalic.ttf') format('truetype'),
+    url('../fonts/Raleway-BlackItalic.svg#Raleway-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-BoldItalic.eot');
+    src: local('Raleway Bold Italic'), local('Raleway-BoldItalic'),
+    url('../fonts/Raleway-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-BoldItalic.woff2') format('woff2'),
+    url('../fonts/Raleway-BoldItalic.woff') format('woff'),
+    url('../fonts/Raleway-BoldItalic.ttf') format('truetype'),
+    url('../fonts/Raleway-BoldItalic.svg#Raleway-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Italic.eot');
+    src: local('Raleway Italic'), local('Raleway-Italic'),
+    url('../fonts/Raleway-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-Italic.woff2') format('woff2'),
+    url('../fonts/Raleway-Italic.woff') format('woff'),
+    url('../fonts/Raleway-Italic.ttf') format('truetype'),
+    url('../fonts/Raleway-Italic.svg#Raleway-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-MediumItalic.eot');
+    src: local('Raleway Medium Italic'), local('Raleway-MediumItalic'),
+    url('../fonts/Raleway-MediumItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-MediumItalic.woff2') format('woff2'),
+    url('../fonts/Raleway-MediumItalic.woff') format('woff'),
+    url('../fonts/Raleway-MediumItalic.ttf') format('truetype'),
+    url('../fonts/Raleway-MediumItalic.svg#Raleway-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+
 body {
   margin: 0;
-  font-family: Arial, Verdana, sans-serif;
+  font-family: Raleway, Verdana, sans-serif;
+  background-color: orange;
+}
+
+header {
+    color: white;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+header .container {
+    position: relative;
+    background-color: black;
+    height: 41px;
+}
+
+header .container .logo {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 68px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 14px;
+}
+
+header .container nav {
+    position: absolute;
+    right: 0;
+    margin-top: 12px;
+}
+
+header .container nav ul {
+    list-style: none;
+    margin-right: 79px;
+}
+
+header .container nav ul li {
+    display: inline-block;
+    font-size: 91%;
+    font-weight: 700;
+    margin-left: 42px;
+}
+
+header .container nav ul li:first-child {
+    margin-right: 32px;
+    font-size: 95%;
+}
+
+header .container nav ul li:nth-child(2n) {
+    font-size: 94%;
+    margin-left: 16px;
+    margin-right: -8px;
+}
+
+header .container nav ul li:nth-child(3n) {
+    font-size: 92%;
+    margin-right: -1px;
+}
+
+main .container:first-child {
+    height: 800px;
 }
 
 
-.application {
-  background-color: #f9f9f9;
-  padding:30px 0;
-}
-.application h3 {
-  color: #575757;
-  font-size: 18px;
-}
-
-.application header.align_right{
-  text-align: right;
-}
 
 
-.inline {
-  display:inline-block;
-  width:300px;
-  padding:14px;
-  vertical-align: top;
-}
 
 
-.form {
-  margin-top:50px;
-}
-.drop_down_list {
-  border:1px solid #8de0d2;
-  width: 280px;
-  height:38px;
-  background-color: white;
-  margin-top:22px;
-  padding: 8px 12px;
-  position: relative;
-}
-
-.list_label {
-  font-size: 30px;
-  color: #e2e2e2;
-  font-family: 'ralewaylight', Arial, Tahoma, sans-serif;
-}
 
 
-.checkbox {
-  position: relative;
-  padding: 30px 30px 30px 0;
-}
-.checkbox input {
-  display: block;
-  opacity: 0;
-  height: 48px;
-  position: absolute;
-  width: 48px;
-  cursor: pointer;
-}
-
-.checkbox label {
-  display: block;
-  padding-left: 65px;
-  position: relative;
-  font-size: 28px;
-  color: #cecece;
-  line-height: 120%;
-  padding-top: 10px;
-  cursor: pointer;
-}
-
-.checkbox label::before, .checkbox label::after {
-  border: 1px solid #27c7ab;
-  content: "";
-  display: block;
-  left: 0;
-  height: 48px;
-  position: absolute;
-  width: 48px;
-  top: 0;
-}
-.checkbox label::after {
-  background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2233.875%22%20height%3D%2233%22%20viewBox%3D%220%200%2033.875%2033%22%3E%0A%20%20%3Cpath%20d%3D%22M9.470%2C15.209%20L14.061%2C24.104%20C14.061%2C24.104%2021.522%2C6.026%2033.287%2C-0.000%20C33.000%2C4.304%2031.852%2C8.035%2033.861%2C12.626%20C28.696%2C13.774%2018.078%2C26.687%2014.635%2C33.000%20C9.756%2C26.974%204.017%2C22.382%20-0.000%2C20.948%20L9.470%2C15.209%20Z%22%20fill%3D%22%2327c7ab%22/%3E%0A%3C/svg%3E%0A") no-repeat center;
-  border: 0;
-  display: none;
-}
-
-.checkbox input:checked + label::after {
-  display: block;
-}
 
 
-.active {
-  background: url('../images/form_ok.jpg');
-  width: 48px;
-  height: 40px;
-
-}
-.inline_text {
-  display: inline-block;
-  width: 228px;
-  vertical-align: top;
-  margin-top: 30px;
-  margin-left: 15px;
-  color: #aeaeae;
-}
-.image_part img{
-  margin-top: 110px;
-  margin-left: 38px;
-}
 
 
-.application .green_bell {
-  background-color: #24baa0;
-  width: 200px;
-  height: 6px;
-  display: inline-block;
-  margin: 5px 0 5px 0;
-}
-
-.summary_panel {
-  background-color: white;
-  width:100%;
-  height:195px;
-  padding:10px;
-  margin-top: 50px;
-
-}
-
-.application .green_button {
-  background-color: #27c7ab;
-  color: white;
-  text-align:center;
-  text-transform: uppercase;
-  width: 200px;
-  padding: 10px 30px;
-  font-size: 24px;
-  display: inline-block;
-  font-family: 'ralewaymedium', Arial, Tahoma, sans-serif;
-  margin-top: 20px;
-  margin-left: 29px;
-  border-radius: 8px;
-  text-decoration: none;
-}
-.panel_left {
-  display: inline-block;
-  width: 185px;
-  vertical-align: top;
-  padding-bottom:10px;
-  border-bottom:1px solid #e7e7e7;
-  height: 135px;
-}
-
-.panel_right {
-  display: inline-block;
-  width: 100px;
-  border-left:1px solid #e7e7e7;
-  text-align: right;
-  vertical-align: top;
-  padding-bottom:10px;
-  border-bottom:1px solid #e7e7e7;
-  height: 135px;
-}
-
-.panel_left h4 , .panel_right h4{
-  color: #24baa0;
-  font-size: 23px;
-}
-
-.panel_left span{
-  margin-top:10px;
-  font-size: 22px;
-  color: #5b5a5a;
-  display: block;
-}
-
-.panel_right span {
-  display: block;
-  font-size: 22px;
-  color: #24baa0;
-  margin-top:10px;
-}
-.sum_label{
-  display: inline-block;
-  width: 185px;
-  margin-top: 10px;
-  font-size: 22px;
-  color: #5b5a5a;
-}
-
-.sum {
-  display: inline-block;
-  width: 100px;
-  text-align: right;
-  margin-top: 10px;
-  font-size: 22px;
-  color: #24baa0;
-}
-
-.list_arrow {
-  width: 0;
-  height: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-top: 15px solid #24baa0;
-  display:block;
-  position: absolute;
-  right: 14px;
-  top: 20px;
-  cursor: pointer;
-}
-
-.list_panel {
-  background-color: white;
-  border: 1px solid #ccc;
-  width: 288px;
-  padding-left: 15px;
-  padding-bottom: 10px;
-  list-style: none;
-  margin: 0;
-  left: 0px;
-  z-index: 2;
-  position: absolute;
-  top: 54px;
-  display:none;
-}
-.list_panel li {
-  margin-top:10px;
-  cursor: pointer;
-  color: #585858;
-}
-
-.title {
-  height: 30px;
-}
