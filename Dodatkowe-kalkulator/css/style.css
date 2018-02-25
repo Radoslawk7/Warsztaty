@@ -321,7 +321,7 @@ main .container div:first-child{
 }
 
 /*DIV1*/
-main .container div:first-child:before {
+main .container div:first-child::before {
     content: "";
     border-bottom: 10px solid #222;
     border-left: 10px solid transparent;
@@ -416,4 +416,28 @@ main .container:first-child input {
     padding-left: 17px;
 }
 
+main .container:first-child:before {
+    position: absolute;
+    right: 91px;
+    top: 245px;
+    width: 30px;
+    height: 30px;
+    border-width: 4px 4px 0 0;
+    content: '';
+    border-style: solid solid none none;
+    transform: rotate(45deg);
+    border-color:#27c7ab;
+}
 
+main .container:first-child:after {
+    position: absolute;
+    top: 245px;
+    left: 81px;
+    width:30px;
+    height: 30px;
+    border-width: 4px 4px 0 0;
+    content: '';
+    border-style: solid solid none none;
+    transform: rotate(225deg);
+    border-color:#27c7ab;
+}
