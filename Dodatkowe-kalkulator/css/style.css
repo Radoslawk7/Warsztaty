@@ -304,17 +304,93 @@ header .container nav ul li:nth-child(3n) {
     margin-right: -1px;
 }
 
+/*MAIN*/
+
+
 main .container:first-child {
-    height: 800px;
+    height: 503px;
+    position: relative;
+    background-color: white;
 }
 
+main .container div:first-child{
+    position: absolute;
+    right: 261px;
+    top: 11px;
+    background-color: black;
+}
 
+/*DIV1*/
+main .container div:first-child:before {
+    content: "";
+    border-bottom: 10px solid #222;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: 0;
+    position: absolute;
+    top: -10px;
+    width: 0;
+    right: 56px;
+}
 
+main .container nav {
+    height: 85px;
+    width: 120px;
+    color: white;
+    padding-top: 11px;
+}
 
+main .container nav ul {
+    list-style: none;
+    margin-left: 12px;font-size: 17px;
+    font-weight: 500;
+    line-height: 27px;
+}
 
+main .container nav ul li:first-child{
+    margin-top: -2px;
+    font-size: 93%;
+    margin-left: 2px;
+}
 
+main .container nav ul li:nth-child(2n){
+    font-size: 93%;
+}
 
+main .container nav ul li:nth-child(3n){
+    margin-top: 1px;
+    font-size: 93%;
+}
 
+/*DIV2*/
+
+main .container div:nth-child(2n) {
+    background-image: url("../images/black_chair.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 475px;
+    width: 382px;
+    top: 68px;
+    left: 119px;
+    background-size: 111%
+}
+
+main .container div:nth-child(3n){
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    width: 300px;
+}
+
+main .container div:nth-child(3n) p {
+    font-size: 35px;
+
+}
+
+main .container div:nth-child(3n) p:nth-child(2n){
+
+    font-size: 20px;
+}
 
 
 
