@@ -581,3 +581,42 @@ main .container:nth-child(2) .ramka .ramkatekst2 {
     text-align: left;
     margin-top: 22px;
 }
+
+
+/*ramki z cenami*/
+
+main .container:last-child {
+    height: 725px;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+}
+
+main .container:last-child .green_belt {
+    background-color: #24baa0;
+    width: 320px;
+    height: 8px;
+    display: inline-block;
+    margin-bottom: 9px;
+    margin-left: 67px;
+    margin-top: 8px;
+}
+
+main .container:last-child p {
+    margin-top: 46px;
+    margin-left: 68px;
+    line-height: 20px;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+main .container:last-child .ramkalewa {
+
+}
+
+main .container:last-child .ramkasrodkowa {
+
+}
+
+main .container:last-child .ramkaprawa {
+
+}
