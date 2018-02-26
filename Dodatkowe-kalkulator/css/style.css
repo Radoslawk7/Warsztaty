@@ -321,7 +321,7 @@ main .container div:first-child{
 }
 
 /*DIV1*/
-main .container div:first-child::before {
+main .container:first-child div:first-child::before {
     content: "";
     border-bottom: 10px solid #222;
     border-left: 10px solid transparent;
@@ -440,4 +440,72 @@ main .container:first-child:after {
     border-style: solid solid none none;
     transform: rotate(225deg);
     border-color:#27c7ab;
+}
+
+main .container:nth-child(2) {
+    clear: both;
+    background-color: white;
+    height: 352px;
+    position: relative;
+
+}
+
+main .container:nth-child(2) div:first-child {
+    background-image: url("../images/box1_img.jpg");
+    height: 225px;
+    width: 330px;
+    float: left;
+    margin-top: 28px;
+    margin-bottom: auto;
+    margin-left: 68px;
+    position: unset;
+}
+
+main .container:nth-child(2) div:nth-child(2){
+    background-image: url("../images/box2_img.jpg");
+    height: 225px;
+    width: 330px;
+    float: left;
+    margin-top: 29px;
+    margin-bottom: auto;
+    margin-left: 27px;
+    position: unset;
+    background-size: cover;
+}
+
+main .container:nth-child(2) div:nth-child(3){
+    background-color: white;
+    border: 1px solid black;
+    height: 250px;
+    width: 338px;
+    float: left;
+    margin-top: 29px;
+    margin-bottom: auto;
+    margin-left: 27px;
+    position: unset;
+}
+
+/*.whitebelt{*/
+    /*background-color: white;*/
+    /*opacity: 35;*/
+    /*height: 35px;*/
+    /*width: 100%;*/
+/*}*/
+
+
+main .container:nth-child(2) div:first-child .green_belt {
+    background-color: #24baa0;
+    width: 138px;
+    height: 6px;
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-left: 13px;
+}
+
+main .container:nth-child(2) div:first-child p {
+    margin-top: 164px;
+    margin-left: 18px;
+    line-height: 19px;
+    font-weight: 500;
+    font-size: 16px;
 }
