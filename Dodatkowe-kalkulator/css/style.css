@@ -313,7 +313,7 @@ main .container:first-child {
     background-color: white;
 }
 
-main .container div:first-child{
+main .container:first-child div:first-child{
     position: absolute;
     right: 261px;
     top: 11px;
@@ -364,7 +364,7 @@ main .container nav ul li:nth-child(3n){
 
 /*DIV2*/
 
-main .container div:nth-child(2n) {
+main .container:first-child div:nth-child(2n) {
     background-image: url("../images/black_chair.png");
     background-repeat: no-repeat;
     position: absolute;
@@ -375,14 +375,14 @@ main .container div:nth-child(2n) {
     background-size: 111%
 }
 
-main .container div:nth-child(3n){
+main .container:first-child div:nth-child(3n){
     position: absolute;
     right: 209px;
     top: 137px;
     width: 447px;
 }
 
-main .container div:nth-child(3n) p {
+main .container:first-child div:nth-child(3n) p {
     margin-top: -3px;
     font-weight: 500;
     text-align: center;
@@ -392,7 +392,7 @@ main .container div:nth-child(3n) p {
 
 }
 
-main .container div:nth-child(3n) p:nth-child(2n){
+main .container:first-child div:nth-child(3n) p:nth-child(2n){
     font-size: 95%;
     text-align: center;
     line-height: 22px;
@@ -556,7 +556,7 @@ main .container:nth-child(2) .ramka p {
     line-height: 19px;
     font-weight: 500;
     margin-bottom: 3px;
-    margin-left: -178px;
+    margin-left: 22px;
     margin-top: 27px;
     font-size: 16px;
 }
@@ -588,7 +588,7 @@ main .container:nth-child(2) .ramka .ramkatekst2 {
 main .container:last-child {
     height: 725px;
     background-color: whitesmoke;
-    box-sizing: border-box;
+    padding-top: 45px;
 }
 
 main .container:last-child .green_belt {
@@ -601,22 +601,124 @@ main .container:last-child .green_belt {
     margin-top: 8px;
 }
 
-main .container:last-child p {
-    margin-top: 46px;
+main .container:last-child .cennik {
     margin-left: 68px;
     line-height: 20px;
     font-weight: 500;
     font-size: 22px;
 }
 
-main .container:last-child .ramkalewa {
+ .ramkalewa {
+     border: 2px solid black;
+     height: 502px;
+     width: 329px;
+     box-sizing: border-box;
+     position: relative;
+     top: 63px;
+     left: 67px;
+}
+
+.kolo1 {
+    border: 2px solid black;
+    color: white;
+    height: 53px;
+    width: 53px;
+    border-radius: 50%;
+    top: -38px;
+    left: 135px;
+    position: absolute;
+    background-color: white;
+}
+
+.kolo2 {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    top: 13px;
+    left: 15px;
+    position: absolute;
+    background-color: black;
+}
+
+.headline {
+    font-size: 140%;
+    text-align: center;
+    margin-top: 28px;
+    margin-left: 4px;
+    color: #27c7ab;
+}
+
+
+.okrag {
+    border: 2px solid black;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    top: 80px;
+    left: 98px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size: 44px;
+    line-height: 24px;
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-left: 33px;
+}
+
+.cena1 {
+    font-size: 43px;
+    font-weight: 700;
+}
+}
+.cena {
+    font-size:25px
+}
+
+.cena2 {
+    font-size:15px
+}
+
+.txt {
+    text-align: center;
+    margin-top: 190px;
+    font-size: 24px;
+    height: 43px;
+    width: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding-top: 5px;
+    padding-left: 6px;
+}
+
+.txt2 {
+    text-align: center;
+    font-size: 24px;
+    height: 45px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 7px;
+    border: 1px solid black;
+}
+
+.buttom {
+    background-color: #27c7ab;
+    color: white;
+    width: 265px;
+    height: 55px;
+    font-size: 23px;
+    right: 297px;
+    bottom: 124px;
+    border-radius: 8px;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding-top: 6px;
+    padding-left: 17px;
+
+}
+ .ramkasrodkowa {
 
 }
 
-main .container:last-child .ramkasrodkowa {
-
-}
-
-main .container:last-child .ramkaprawa {
+ .ramkaprawa {
 
 }
