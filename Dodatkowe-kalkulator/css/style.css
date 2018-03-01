@@ -241,7 +241,7 @@
 body {
   margin: 0;
   font-family: Raleway, Verdana, sans-serif;
-  background-color: orange;
+  /*background-color: orange;*/
 }
 
 header {
@@ -310,7 +310,23 @@ header .container nav ul li:nth-child(3n) {
 main .container:first-child {
     height: 503px;
     position: relative;
-    background-color: white;
+    /* IE10+ */
+    background-image: -ms-linear-gradient(top, #F7FBFF 0%, #CCCFD4 100%);
+
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(top, #F7FBFF 0%, #CCCFD4 100%);
+
+    /* Opera */
+    background-image: -o-linear-gradient(top, #F7FBFF 0%, #CCCFD4 100%);
+
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F7FBFF), color-stop(100, #CCCFD4));
+
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(top, #F7FBFF 0%, #CCCFD4 100%);
+
+    /* W3C Markup */
+    background-image: linear-gradient(to bottom, #F7FBFF 0%, #CCCFD4 100%);
 }
 
 main .container:first-child div:first-child{
@@ -368,11 +384,11 @@ main .container:first-child div:nth-child(2n) {
     background-image: url("../images/black_chair.png");
     background-repeat: no-repeat;
     position: absolute;
-    height: 475px;
+    height: 369px;
     width: 382px;
     top: 68px;
     left: 119px;
-    background-size: 111%
+    background-size: 111%;
 }
 
 main .container:first-child div:nth-child(3n){
@@ -473,6 +489,11 @@ main .container:nth-child(2) div:nth-child(2){
     background-size: cover;
 }
 
+/*.obrazek2:hover + .ramka{*/
+    /*display:block;*/
+    /*opacity: 1;*/
+/*}*/
+/*----------------------------------------------------------------------HOVER*/
 main .container:nth-child(2) div:nth-child(3){
     background-color: white;
     border: 1px solid black;
@@ -483,6 +504,7 @@ main .container:nth-child(2) div:nth-child(3){
     margin-bottom: auto;
     margin-left: 27px;
     position: unset;
+    /*display: none;*/
 }
 
 /*krzesło*/
@@ -599,6 +621,7 @@ main .container:last-child .green_belt {
     margin-bottom: 9px;
     margin-left: 67px;
     margin-top: 8px;
+    position: absolute;
 }
 
 main .container:last-child .cennik {
@@ -607,19 +630,22 @@ main .container:last-child .cennik {
     font-weight: 500;
     font-size: 22px;
 }
-
- .ramkalewa {
-     border: 2px solid black;
-     height: 502px;
-     width: 329px;
-     box-sizing: border-box;
-     position: relative;
-     top: 63px;
-     left: 67px;
+/*/////////////////////////////////////////////////////////////// RAMKA LEWA*/
+.ramkalewa {
+    border: 2px solid #9ea3aa;
+    height: 502px;
+    width: 329px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 90px;
+    left: 67px;
+    display: inline-block;
+    top: 3px;
+    background-color: whitesmoke;
 }
 
-.kolo1 {
-    border: 2px solid black;
+.ramkalewa .kolo1 {
+    border: 2px solid #9ea3aa;
     color: white;
     height: 53px;
     width: 53px;
@@ -630,17 +656,17 @@ main .container:last-child .cennik {
     background-color: white;
 }
 
-.kolo2 {
+.ramkalewa .kolo2 {
     height: 25px;
     width: 25px;
     border-radius: 50%;
     top: 13px;
-    left: 15px;
+    left: 14px;
     position: absolute;
-    background-color: black;
+    background-color: #9ea3aa;
 }
 
-.headline {
+.ramkalewa .headline {
     font-size: 140%;
     text-align: center;
     margin-top: 28px;
@@ -649,8 +675,8 @@ main .container:last-child .cennik {
 }
 
 
-.okrag {
-    border: 2px solid black;
+.ramkalewa .okrag {
+    border: 2px solid #9ea3aa;
     height: 130px;
     width: 130px;
     border-radius: 50%;
@@ -665,60 +691,545 @@ main .container:last-child .cennik {
     padding-left: 33px;
 }
 
-.cena1 {
+.ramkalewa .cena1 {
     font-size: 43px;
     font-weight: 700;
-}
-}
-.cena {
-    font-size:25px
+    position: relative;
+    color: #9ea3aa;
 }
 
-.cena2 {
-    font-size:15px
+.ramkalewa .cena {
+    font-size: 15px;
+    position: absolute;
+    top: -15px;
+    right: 25px;
+    color: #9ea3aa;
 }
 
-.txt {
+.ramkalewa .cena2 {
+    font-size: 16px;
+    position: absolute;
+    bottom: 23px;
+    right: 26px;
+    font-weight: 500;
+    color: #9ea3aa;
+}
+
+.ramkalewa .txt {
     text-align: center;
     margin-top: 190px;
     font-size: 24px;
     height: 43px;
     width: 100%;
-    border: 1px solid black;
     box-sizing: border-box;
     padding-top: 5px;
     padding-left: 6px;
+    color: #9ea3aa;
+    background-color: rgba(198, 198, 198, 0.44);
 }
 
-.txt2 {
+.ramkalewa .txt2 {
     text-align: center;
     font-size: 24px;
     height: 45px;
     width: 100%;
     box-sizing: border-box;
     padding-top: 7px;
-    border: 1px solid black;
+    color: #9ea3aa;
+    background-color: #eeeeee;
 }
 
-.buttom {
+.ramkalewa .buttom {
     background-color: #27c7ab;
     color: white;
-    width: 265px;
-    height: 55px;
-    font-size: 23px;
-    right: 297px;
-    bottom: 124px;
+    width: 123px;
+    height: 34px;
+    font-size: 16px;
+    font-weight: 500;
+    right: 100px;
+    bottom: 20px;
     border-radius: 8px;
     text-decoration: none;
     box-sizing: border-box;
-    padding-top: 6px;
-    padding-left: 17px;
+    padding-top: 9px;
+    padding-left: 30px;
+    position: absolute;
 
 }
- .ramkasrodkowa {
-
+/*/////////////////////////////////////////////////////////////// RAMKA ŚRODKOWA*/
+.ramkasrodkowa {
+    height: 502px;
+    width: 330px;
+    box-sizing: border-box;
+    position: relative;
+    top: 46px;
+    margin-left: 94px;
+    margin-right: 15px;
+    display: inline-block;
+    background-color: #27c7ab;
 }
 
- .ramkaprawa {
+
+.ramkasrodkowa .kolo1 {
+    color: white;
+    height: 53px;
+    width: 53px;
+    border-radius: 50%;
+    top: -37px;
+    left: 139px;
+    position: absolute;
+    background-color: #27c7ab;
+}
+
+.ramkasrodkowa .kolo2 {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    top: 14px;
+    left: 14px;
+    position: absolute;
+    background-color: white;
+}
+
+.ramkasrodkowa .headline {
+    font-size: 140%;
+    text-align: center;
+    margin-top: 28px;
+    margin-left: 6px;
+    color: white;
+}
+
+
+.ramkasrodkowa .okrag {
+    height: 126px;
+    width: 126px;
+    border-radius: 50%;
+    top: 83px;
+    left: 102px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 1);
+    font-size: 44px;
+    line-height: 24px;
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-left: 33px;
+}
+
+.ramkasrodkowa .cena1 {
+    font-size: 43px;
+    font-weight: 700;
+    position: relative;
+    color: #27c7ab;
+}
+
+.ramkasrodkowa .cena {
+    font-size: 15px;
+    position: absolute;
+    top: -15px;
+    right: 25px;
+    color: #27c7ab;
+}
+
+.ramkasrodkowa .cena2 {
+    font-size: 16px;
+    position: absolute;
+    bottom: 23px;
+    right: 26px;
+    font-weight: 500;
+    color: #27c7ab;
+}
+
+.ramkasrodkowa .txt {
+    text-align: center;
+    margin-top: 190px;
+    font-size: 24px;
+    height: 43px;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding-top: 7px;
+    padding-left: 6px;
+    color: #9ea3aa;
+    background-color: white;
+}
+
+.ramkasrodkowa .txt2 {
+    text-align: center;
+    font-size: 24px;
+    height: 45px;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding-top: 8px;
+    color: #9ea3aa;
+    background-color: #eeeeee;
+}
+.ramkasrodkowa .txt3 {
+    text-align: center;
+    font-size: 24px;
+    height: 43px;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding-top: 5px;
+    padding-left: 6px;
+    color: #9ea3aa;
+    background-color: white;
+}
+
+.ramkasrodkowa .buttom {
+    background-color: white;
+    color: #27c7ab;
+    width: 123px;
+    height: 34px;
+    font-size: 16px;
+    font-weight: 500;
+    right: 102px;
+    bottom: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding-top: 9px;
+    padding-left: 30px;
+    position: absolute;
 
 }
+/*/////////////////////////////////////////////////////////////// RAMKA PRAWA*/
+.ramkaprawa {
+    border: 2px solid #9ea3aa;
+    height: 502px;
+    width: 329px;
+    box-sizing: border-box;
+    position: relative;
+    margin-left: 13px;
+    margin-right: 15px;
+    display: inline-block;
+    top: 93px;
+    background-color: whitesmoke;
+}
+
+
+.ramkaprawa .kolo1 {
+    border: 2px solid #9ea3aa;
+    color: white;
+    height: 53px;
+    width: 53px;
+    border-radius: 50%;
+    top: -38px;
+    left: 135px;
+    position: absolute;
+    background-color: white;
+}
+
+.ramkaprawa .kolo2 {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    top: 13px;
+    left: 14px;
+    position: absolute;
+    background-color: #9ea3aa;
+}
+
+.ramkaprawa .headline {
+    font-size: 140%;
+    text-align: center;
+    margin-top: 28px;
+    margin-left: 4px;
+    color: #27c7ab;
+    box-sizing: border-box;
+    padding-right: 9px;
+}
+
+
+.ramkaprawa .okrag {
+    border: 2px solid #9ea3aa;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    top: 80px;
+    left: 98px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size: 44px;
+    line-height: 24px;
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-left: 33px;
+}
+
+.ramkaprawa .cena1 {
+    font-size: 43px;
+    font-weight: 700;
+    position: relative;
+    color: #9ea3aa;
+    margin-right: 1px;
+    right: 18px;
+    bottom: 1px;
+}
+
+.ramkaprawa .cena {
+    font-size: 15px;
+    position: absolute;
+    top: -15px;
+    right: 6px;
+    color: #9ea3aa;
+}
+
+.ramkaprawa .cena2 {
+    font-size: 16px;
+    position: absolute;
+    bottom: 23px;
+    right: 26px;
+    font-weight: 500;
+    color: #9ea3aa;
+}
+
+.ramkaprawa .txt {
+    text-align: center;
+    margin-top: 190px;
+    font-size: 24px;
+    height: 43px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 5px;
+    padding-left: 6px;
+    color: #9ea3aa;
+    background-color: rgba(198, 198, 198, 0.44);
+}
+
+.ramkaprawa .txt2 {
+    text-align: center;
+    font-size: 24px;
+    height: 45px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 7px;
+    color: #9ea3aa;
+    background-color: #eeeeee;
+}
+
+.ramkaprawa .txt3 {
+    text-align: center;
+    font-size: 24px;
+    height: 43px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 5px;
+    padding-left: 13px;
+    color: #9ea3aa;
+    background-color: rgba(198, 198, 198, 0.44);
+}
+
+.ramkaprawa .txt4 {
+    text-align: center;
+    font-size: 24px;
+    height: 45px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 7px;
+    padding-left: 8px;
+    color: #9ea3aa;
+    background-color: #eeeeee;
+}
+
+.ramkaprawa .buttom {
+    background-color: #27c7ab;
+    color: white;
+    width: 123px;
+    height: 34px;
+    font-size: 16px;
+    font-weight: 500;
+    right: 100px;
+    bottom: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding-top: 9px;
+    padding-left: 30px;
+    position: absolute;
+}
+
+
+/*----------------------------------------------------CZERWONY FOTEL*/
+
+footer .container {
+    background-color: white;
+    height: 570px;
+}
+
+footer .dane {
+    height: 800px;
+    width: 500px;
+    float: left;
+}
+
+footer .cennik {
+    line-height: 20px;
+    font-weight: 500;
+    font-size: 22px;
+    top: 33px;
+    left: 74px;
+    border-bottom: 8px solid #24baa0;
+    margin-top: 32px;
+    margin-left: 74px;
+    width: 318px;
+    height: 30px;
+}
+
+footer .dane .imie {
+    width: 618px;
+    height: 63px;
+    margin-left: 73px;
+    margin-top: 45px;
+    font-size: 32px;
+    padding-left: 15px;
+    border: 1px solid #27c7ab;
+    text-decoration: none;
+    font-weight: 100;
+    font-family: Raleway, Verdana, sans-serif;
+}
+
+footer .dane .email {
+    width: 617px;
+    height: 65px;
+    margin-left: 73px;
+    margin-top: 26px;
+    font-size: 32px;
+    padding-left: 14px;
+    border: 1px solid #27c7ab;
+    text-decoration: none;
+    font-weight: 100;
+    font-family: Raleway, Verdana, sans-serif;
+}
+
+footer .dane .wiadomosc {
+    width: 618px;
+    height: 171px;
+    margin-left: 73px;
+    margin-top: 25px;
+    font-size: 33px;
+    padding-left: 13px;
+    padding-top: 13px;
+    resize:	none;
+    border: 1px solid #27c7ab;
+    text-decoration: none;
+    font-weight: 100;
+    font-family: Raleway, Verdana, sans-serif;
+}
+
+/*------------------------------------------------------------CZERWONY FOTEL*/
+footer .czerwony {
+    float: left;
+    margin-left: 251px;
+    margin-top: 87px;
+    height: 405px;;
+    width: 432px;
+}
+
+footer .czerwony .czerwonyfotel {
+    margin-left: 29px;
+    margin-top: -1px;
+}
+
+footer .czerwony .buttom {
+    background-color: #27c7ab;
+    color: white;
+    width: 343px;
+    height: 72px;
+    font-size: 34px;
+    font-weight: 500;
+    border-radius: 8px;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding-top: 16px;
+    padding-left: 113px;
+    margin-top: 40px;
+    margin-left: 11px;
+}
+
+/*--------------------------------------------------------PTASZEK*/
+.checkbox {
+    position: relative;
+    padding-left: 11px;
+    padding-top: 29px;
+}
+.checkbox input {
+    display: block;
+    opacity: 0;
+    height: 48px;
+    position: absolute;
+    width: 48px;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.checkbox label {
+    display: block;
+    position: relative;
+    font-size: 124%;
+    color: #cecece;
+    line-height: 105%;
+    padding-top: 7px;
+    padding-right: 11px;
+    padding-left: 61px;
+}
+
+.checkbox label::before, .checkbox label::after {
+    border: 1px solid #27c7ab;
+    content: "";
+    display: block;
+    left: 0;
+    height: 48px;
+    position: absolute;
+    width: 48px;
+    top: 0;
+}
+.checkbox label::after {
+    background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2233.875%22%20height%3D%2233%22%20viewBox%3D%220%200%2033.875%2033%22%3E%0A%20%20%3Cpath%20d%3D%22M9.470%2C15.209%20L14.061%2C24.104%20C14.061%2C24.104%2021.522%2C6.026%2033.287%2C-0.000%20C33.000%2C4.304%2031.852%2C8.035%2033.861%2C12.626%20C28.696%2C13.774%2018.078%2C26.687%2014.635%2C33.000%20C9.756%2C26.974%204.017%2C22.382%20-0.000%2C20.948%20L9.470%2C15.209%20Z%22%20fill%3D%22%2327c7ab%22/%3E%0A%3C/svg%3E%0A") no-repeat center;
+    border: 0;
+    display: none;
+}
+
+.checkbox input:checked + label::after {
+    display: block;
+}
+
+footer .mainfooter {
+    background-color: white;
+    height: 651px;
+    position: relative;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer .mainfooter .footer1 {
+    position: absolute;
+    left: 65px;
+    top: 15px;
+    width: 500px;
+    font-size: 98%;
+    letter-spacing: 1px;
+}
+
+footer .mainfooter .footer2 {
+    position: absolute;
+    right: 36px;
+    width: 400px;
+}
+
+footer .mainfooter .footer2 .sit {
+    width: 144px;
+    height: 22px;
+    font-size: 20px;
+    margin-right: 39px;
+    letter-spacing: 1px;
+    float: right;
+    box-sizing: border-box;
+    padding-top: 12px
+}
+
